@@ -1,34 +1,47 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>REGiSTRATiON FORM</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<link rel="icon" type="image/png" href="icon.ico" sizes="16x16" />
+<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<title>REGiSTRATiON [CTF-2K19]</title>
 </head>
 <body>
-<h2>Enter Your Personal Details</h2>
+<div class="FORM-BOX"><h2>Register Now</h2>
 <form action="Back-End-Message.html" method="post">
-	<div>
+
+	<div class="inputBox">
 	<label>First Name:<input type="text" name="fname" placeholder="Vineet" required></label>
 	<label>Last Name:<input type="text" name="lname" placeholder="Kumar" required></label>
 	</div>
-	<div>
+
+	<div class="inputBox">
 	<h4>Select Gender:</h4>
 	<label>Male:<input id="male"  type="radio" name="gender" value="male" required></label>
 	<label>Female:<input id="female" type="radio" name="gender" value="female" required></label>
 	<label>Other:<input id="other" type="radio" name="gender" value="other" required></label>
 	</div>
-	<div><h4></h4>
+
+	<div class="inputBox"><h4></h4>
 	<label>Email:<input type="email" name="mail" pattern="[a-zA-Z0-9.-_]{1,}@[a-zA-Z.-]{2,}[.]{1}[a-zA-Z]{2,}" placeholder="vineet@gmail.com" required></label>
 	<label>Password:<input type="password" name="pass" pattern=".{10,}" placeholder="More than 10 Characters" required></label>
 	</div>
-	<div><h4></h4>
+
+	<div class="inputBox"><h4></h4>
 	<label>Date Of Birth:<input type="date" name="dob" required></label>
 	</div>
-	<div><h4></h4>
-	<label>I Agree To Terms And Conditions: <input type="checkbox" name="agree" required></label>
+
+	<div class="inputbox"><h4></h4>
+	<label>I Agree To Terms And Conditions: <input type="checkbox" name="agree" required><span class="slider round"></span></label>
 	</div>
-	<div><h4></h4>
-		<input type="submit" value="Submit">
+
+	<div class="inputBox"><h4></h4>
+	<input type="submit" class="registerbtn" value="Submit">
 	</div>
+
 </form>
+</div>
 </body>
+<script src="anim.js"></script>
 </html>
